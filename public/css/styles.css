@@ -572,4 +572,97 @@ align-items: center;
   margin-bottom: 0;
 }
 
+/*-----------------------------------Account_Database-----------------------------------*/
 
+.body-acc-db{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #E5E5E5;
+  margin-top: 20px;
+}
+/*search stlye*/
+
+.search{
+  padding-top: 20px;
+  width: 90%;
+  align-self: center;
+  display: flex;
+ 
+}
+
+.search input{
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  
+}
+
+.search button{
+  border: none;
+  border-radius: 5px;
+  background-color: #019267;
+  width: auto;
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+.search button:hover{
+  background-color:#366738;
+}
+
+.S-button{
+  margin-left: 5px;
+}
+.edit-delete{
+  margin-left: auto;
+  width: 155px;
+  justify-content: space-between;
+  
+}
+
+
+/*search end*/
+
+
+/*account table style*/
+
+.acc-table {
+  align-self: center;
+  width: 90%;
+  border-collapse: collapse;
+  margin-top:  10px;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.acc-table thead tr {
+  background-color: #019267;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.acc-table th,
+.acc-table td {
+  padding: 12px 15px;
+}
+
+.acc-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+ 
+}
+
+.acc-table tbody tr:last-of-type {
+  border-bottom: 2px solid #019267;
+}
+
+tbody :hover {
+  background-color: #B4E197;
+}
+
+/*table end*/
