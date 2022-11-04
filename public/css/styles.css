@@ -2,8 +2,10 @@
 
 /*body{}*/
 
+
 .div-body-login{
-  display: flex;
+  
+  display: none;
   align-items: center;
   justify-content: center;
   width:100%;
@@ -11,6 +13,8 @@
   z-index: -1;
   box-sizing: border-box;
   background-color: #F4F9F4;
+  position: absolute;
+  
   /* overflow: hidden; */
 }
 
@@ -23,7 +27,7 @@
   justify-content: center;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  z-index: 1;
+  z-index: wwwwwwwwwwww1;
 }
 
 .logo{
@@ -53,7 +57,7 @@
 }
 
 .input-box{
-  padding: 1rem;
+  padding: 1rem;  
   width: 65%;
   text-align: center;
   margin: auto;
@@ -85,6 +89,15 @@
 
 .div-logo-description .logo-description{
   font-size: 0.8rem;
+}
+
+.sign_up{
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.R_link{
+  font-weight: bold;
 }
 
 
@@ -397,7 +410,7 @@ font-weight: bold;
  transform: translateY(-10px);
  opacity: 0;
  visibility: hidden;
- transition: all .4s ease;
+ transition: all .50s ease;
  z-index: 2;
 }
 
@@ -405,6 +418,7 @@ font-weight: bold;
   cursor: pointer;
 }
 .dropdown button:hover {
+  transition: .20s ease-in-out;
   color: darkgray;
 }
 
@@ -424,6 +438,8 @@ align-items: center;
 
 .dropdown li:hover{
   background-color: #bcfabc;
+  transition: .20s ease-in-out;
+  
 }
 
 .dropdown button:focus + ul{
@@ -437,13 +453,11 @@ align-items: center;
 
 
 
-
-
 /*carousel*/
 .div-body-dashboard .welcome-carousel{
-  width: 90%;
+  width: 80%;
   height: 26rem;
-  margin-left: 5%;
+  margin-left: 10%;
   margin-top: 0.5rem;
   background: #FFFFFF;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -476,7 +490,7 @@ align-items: center;
 
 .navigation-manual{
   position: absolute;
-  width: 90%;
+  width: 80%;
 
   margin-top: 50px;
   display: flex;
@@ -498,6 +512,7 @@ align-items: center;
 
 .manual-btn:hover{
   background: #60f160;
+  transition: .20s ease-in-out;
 }
 
 #radio1:checked ~ .first{
@@ -514,14 +529,14 @@ align-items: center;
 
 #radio4:checked ~ .first{
   margin-left: -60%;
-}
+} 
 
 /*css for automatic navigation*/
 
 .navigation-auto{
   position: absolute;
   display: flex;
-  width: 90%;
+  width: 80%;
   justify-content: center;
   margin-top: 350px;
 }
@@ -570,10 +585,11 @@ align-items: center;
   padding: 0;
 }
 .dashboard-buttons button{
-  width: 100%;
-  height: 13rem;
+  width: 90%;
+  height: 10rem;
   border-radius: 20px;
   margin-bottom: 0;
+  margin-left: 5%;
 }
 
 /*-----------------------------------Account_Database-----------------------------------*/
@@ -605,7 +621,7 @@ align-items: center;
 .search button{
   border: none;
   border-radius: 5px;
-  background-color: #019267;
+  background-color: #28a745;
   width: auto;
   text-decoration: none;
   color: #ffffff;
@@ -613,24 +629,27 @@ align-items: center;
 }
 
 .search button:hover{
-  background-color:#366738;
+  background-color:#045818;
+  transition: .20s ease-in-out;
 }
 
 .S-button{
   margin-left: 5px;
 }
+/*
 .edit-delete{
   margin-left: auto;
   width: 155px;
   justify-content: space-between;
   
 }
+*/
 
 
 /*search end*/
 
 
-/*account table style*/
+/*table style*/
 
 .acc-table {
   align-self: center;
@@ -645,7 +664,7 @@ align-items: center;
 }
 
 .acc-table thead tr {
-  background-color: #019267;
+  background-color: #28a745;
   color: #ffffff;
   text-align: left;
   font-weight: bold;
@@ -662,11 +681,63 @@ align-items: center;
 }
 
 .acc-table tbody tr:last-of-type {
-  border-bottom: 2px solid #019267;
+  border-bottom: 2px solid #28a745;
 }
 
 tbody :hover {
   background-color: #B4E197;
+  transition: .20s ease-in-out;
+}
+
+.cus_link{
+text-align: center;
+}
+.cus_link a{
+  width: max-content;
 }
 
 /*table end*/
+
+/* Pre-Loader */
+
+.poly{
+  background-color: green;
+  height: 50px;
+  width:50px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  animation: animate 2s ease-in-out infinite;
+  rotate: 0deg;
+}
+
+@keyframes animate {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
+
+
+body .green{
+height: 100vh;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.Loading_Screen {
+width: 100%;
+height: 100vh;
+display: flex;
+position: absolute;
+top: 0;
+
+
+
+
+}
+/* end of pre-loader */

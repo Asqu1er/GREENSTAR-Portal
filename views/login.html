@@ -9,8 +9,9 @@
   </head>
   <body>
 
-    <div class="div-body-login">
-
+<div>
+    <div id = "_main" class="div-body-login">
+      
       <section class="inner">
       <div class="logo">
         <h2 class="greenstar-h2">GREENSTAR LP</h2>
@@ -29,11 +30,31 @@
             <input type="text" class="login-password form-control input-sm" name="" value="" placeholder="Password">
             <button type="button" class="btn btn-success">Login</button>
           </form>
+          <p class="sign_up"> Don't have account? <a class="R_link sign_up" href="..\views\register.html">Sign up</a> </p>
         </div>
+        
       </div>
     </section>
+    
 
     </div>
+    <div id="Loading_screen" style="background-color: #FFFFFF;">
+      <div class="green">GREEN ST<div class="poly"></div>R</div>
+    </div>
+
+  </div>
+    
+    
+    <script>
+      
+      var loader = document.getElementById("Loading_screen");
+      var main = document.getElementById("_main");
+
+      window.addEventListener("load", function(){
+        loader.style.display = "none";
+        main.style.display = "flex";
+      });
+    </script>
 
   </body>
 </html>

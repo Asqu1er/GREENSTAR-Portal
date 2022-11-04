@@ -12,7 +12,7 @@
 
 
     <div class="nav-bar">
-      <p class="Company-Text">GREEN STAR LP</p>
+      <p class="Company-Text">GREEN STAR LP | CUSTOMER DATABASE</p>
       <div class="dropdown">
         <button class="account-dropdown">users name <i class="fa-solid fa-caret-down"></i></button>
           <ul>
@@ -26,52 +26,77 @@
   <div class="search">
     <input type="text" id="SearchText" placeholder="Search by ID"> 
     <button class="S-button">Search <i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
 
-    <div class="edit-delete"> 
+  
+    <!-- <div class="edit-delete"> 
 
       <button class="E-button">EDIT <i class="fa-solid fa-user-pen"></i></button>
       <button class="D-button">DELETE <i class="fa-solid fa-trash"></i></button></div>
-  </div>
+  </div> -->
 
   <table class="acc-table">
     <thead>
-
       <tr>
         <th>ID</th>
         <th>Full Name</th>
-        <th>Username</th>
+        <th>Plate Number</th>
+        <th>City</th>
+        <th class="cus_link">Customer Information</th>
+        
       </tr>
     </thead>
     <tbody>
 
-                                    <!-- TABLE BUILDER -->
-<!-- 
-      <% for(var i=0; i < account.length; i++) {%>
-        <tr>
-  
-          <td><%= account[i].id %></td>
-          <td><%= account[i].Fullname %></td>
-          <td><%= account[i].Username %></td>
-  
-          </tr>
-  
-          <% } %> -->
 
+                                  <!-- TABLE BUILDER -->
+
+
+    <!-- <% for(var i=0; i < customer.length; i++) {%>
+      <tr>
+
+        <td><%= customer[i].id %></td>
+        <td><%= customer[i].Fullname %></td>
+        <td><%= customer[i].Username %></td>
+        <td><%= customer[i].City %></td>
+
+        </tr>
+
+        <% } %> -->
 
       <tr>
         <td>1</td>
         <td>Sample_Fullname</td>
         <td>Sample_Username</td>
+        <td>Sample_City</td>
+        <td class="cus_link">
+          <a href="..\views\cust_info.html">
+            <i class="fa-solid fa-circle-info"></i>
+          </a>
+        </td>
+
         </tr>
         <tr>
           <td>2</td>
           <td>Sample_Fullname</td>
           <td>Sample_Username</td>
+          <td>Sample_City</td>
+          <td class="cus_link">
+            <a href="..\views\cust_info.html">
+              <i class="fa-solid fa-circle-info"></i>
+            </a>
+          </td>
           </tr>
           <tr>
             <td>3</td>
             <td>Sample_Fullname</td>
             <td>Sample_Username</td>
+            <td>Sample_City</td>
+            <td class="cus_link">
+              <a href="..\views\cust_info.html">
+                <i class="fa-solid fa-circle-info"></i>
+              </a>
+            </td>
             </tr>
     </tbody>
   </table>
